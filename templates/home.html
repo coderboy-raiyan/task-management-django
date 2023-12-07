@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="text-center my-5">All The tasks</h1>
-<section class="row my-5 container-xl gap-2 mx-auto">
+<h1 class="text-center mt-4 mb-3">All The tasks</h1>
+<section class="row my-2 container-xl gap-2 mx-auto">
   <div class="row row-cols-lg-3 row-cols-md-3 row-cols-1 g-3">
     {% for task in tasks %}
       <div class="col">
@@ -12,7 +12,7 @@
            <br>
             <span class="fw-bold fs-5">Title : {{ task.task_title }}</span> 
             <br>
-            <span>Date : {{task.task_assign}}</span>
+            <span class="fw-light">Assigned Date : {{task.task_assign}}</span>
           </div>
           <div class="card-body">
             <p class="card-text">{{ task.task_description }}</p>

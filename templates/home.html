@@ -7,8 +7,12 @@
     {% for task in tasks %}
       <div class="col">
         <div class="card shadow-sm">
-          <div class="card-header fw-bold">
-            {{ task.task_title }}
+          <div class="card-header fw-medium">
+           <span class="text-primary">id: #{{task.id}}</span> 
+           <br>
+            <span class="fw-bold fs-5">Title : {{ task.task_title }}</span> 
+            <br>
+            <span>Date : {{task.task_assign}}</span>
           </div>
           <div class="card-body">
             <p class="card-text">{{ task.task_description }}</p>
